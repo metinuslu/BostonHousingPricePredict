@@ -1,5 +1,5 @@
 # Boston Housing Price Prediction with Neural Network
-![alt text](https://github.com/metinuslu/BostonHousingPricePredict/BostonHousingCover.jpg "Boston Housing")
+![Boston Housing](https://github.com/metinuslu/BostonHousingPricePredict/blob/master/BostonHousingCover.jpg "Boston Housing")
 
 
 ## Dataset
@@ -12,9 +12,11 @@
 3. Using MASS Package **DataSet <- MASS::Boston**  
 	[**Visit MASS Package Page**] (https://cran.r-project.org/web/packages/MASS/MASS.pdf)
 
-### MetaData
+### MetaData  
 Use `help(Boston)`
 
-## Output
-![alt text]( "")
+## Output  
+Find out the results in **4_ActualPredictedValues.csv** under the **Outputs** directory.
 
+### Performance Critiera  
+**Mean Square Error Value:** 0.009414517716  
