@@ -11,16 +11,16 @@ options(warn = -1)
 
 
 # Install & Use Library ---------------------------------------------------
-if (require("MASS")==FALSE){
+if (require("MASS") == FALSE){
   install.packages("MASS")
   library(MASS)
 }
-if (require("neuralnet")==FALSE){
+if (require("neuralnet") == FALSE){
   install.packages("neuralnet")
   library(neuralnet)
 }
 
-# Set the System Path & Variable & Output Directory Name
+# Set the System Path & Variable
 if (require('here') == FALSE){
   install.packages('here')
   library(here)
@@ -67,7 +67,7 @@ hist(DataSet$medv,
      xlab = x_name)
 dev.off()
 
-# Awesome Functions (apply, sapply,lapply)
+# Awesome Functions (apply, sapply and lapply)
 apply(DataSet, 2, range)
 
 MaxValue <- apply(DataSet, 2, max)
@@ -100,6 +100,7 @@ PredictVars <- paste(PredictVars, collapse = "+")
 
 ModelFormula <- as.formula(paste("medv~", PredictVars, collapse = "+"))
 
+# Model Architecture
 # Create the Neural Network Model
 # Input Layer Size: 13 Independent Variable
 # 2 Hidden Layer
@@ -131,10 +132,10 @@ head(Result)
 
 ColMean <- apply(Result, 2, mean)
 
-MSE <- sum((PredictValuesResult - ActualValues)^2)/nrow(TestDF) #Mean Square Error
+#Performance Critiera:Mean Square Error (MSE)
+MSE <- sum((PredictValuesResult - ActualValues)^2)/nrow(TestDF) 
 
 cat("Mean Square Error: ", MSE)
-
 
 # Plot of Actual Values and Predicted Values
 jpeg(filename = paste0("./Outputs/ActualvsPredictedValues.jpg"), units="px")

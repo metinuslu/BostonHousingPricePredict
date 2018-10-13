@@ -1,6 +1,7 @@
 # Boston Housing Price Prediction with Neural Network
 ![Boston Housing](BostonHousingCover.jpg "Boston Housing")
 
+Visit Blog: [**veribilimci.org**](http://veribilimci.org/yapay-sinir-aglari-kullanilarak-boston-housing-dataseti-uzerinde-fiyat-tahmini/)
 
 ## Dataset
 
@@ -18,5 +19,5 @@ Use `help(Boston)`
 ## Output  
 Find out the results in **4_ActualPredictedValues.csv** under the **Outputs** directory.
 
-### Performance Critiera  
+### Performance Critiera 
 **Mean Square Error Value:** 0.009414517716  
