@@ -1,5 +1,5 @@
 # Boston Housing Price Prediction with Neural Network
-![Boston Housing](https://github.com/metinuslu/BostonHousingPricePredict/blob/master/BostonHousingCover.jpg "Boston Housing")
+![Boston Housing](BostonHousingCover.jpg "Boston Housing")
 
 
 ## Dataset
